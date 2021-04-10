@@ -6,7 +6,8 @@
     ],
     "scripts": {
         "start": "yarn build && lerna run watch --stream --parallel",
-        "build": "lerna run build --stream"
+        "build": "lerna run build --stream",
+        "bootstrap": "lerna bootstrap --use-workspaces"
     },
     "devDependencies": {
         "lerna": "^4.0.0",

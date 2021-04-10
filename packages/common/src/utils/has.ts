@@ -1,3 +1,4 @@
 export function has(obj: any, props: Array<string>) {
-    return Object.keys(obj).every(key => props.indexOf(key) > -1)
+    if (typeof obj === "undefined" || null === obj) { return false }
+    return props.every(prop => Object.keys(obj).indexOf(prop) > -1)
 }

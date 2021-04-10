@@ -5,3 +5,4 @@ export * from "./models/Document"
 
 export * from "./utils/has"
 export * from "./utils/option"
+export * from "./utils/strToLabel"

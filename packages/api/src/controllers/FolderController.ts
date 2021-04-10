@@ -4,6 +4,7 @@ import Neo from "../services/NeoService"
 import Security from "../services/Security"
 import { Folder } from "@sync/common"
 import { ApiError, has } from "@sync/common"
+import { createObject } from "../repositories/createObject"
 
 export default {
 
@@ -32,32 +33,20 @@ export default {
     create: async (req: any, res: any, next: Function) => {
         const user = await Security.user(req.headers)
 
-        // validate input
-        if (!has(req.body, ['name'])) {
-            res.send(400, (new ApiError(`Parameter <name> is required`)).json())
+        // validate request body input
+        if (!has(req.body, ['folder'])) {
+            res.send(400, (new ApiError(`Body parameter <folder> is required`)).json())
             return next()
         }
 
-        if (null === user) {
-            res.send(403, { error: "Unauthorized of unrecognized user" })
+        try {
+            const folder = await createObject(user, new Folder(req.body.folder))
+            res.send(200, folder)
+            return next()
+        } catch (e) {
+            res.send(403, (new ApiError(e)).json())
             return next()
         }
-
-        const uuid = uuidv4()
-        const query = `MATCH (u:User{id:$userId}) MERGE (f:Folder{id:$uuid})-[r:OWNED_BY]->(u) SET f.name = $name RETURN ${Folder.fields("f")}, collect(type(r)) AS acls`
-        const params = { uuid: uuid, userId: user.id, name: req.body.name }
-
-        const records = await Neo.cypher(query, params)
-
-        if (records.length === 0) {
-            res.send(404, { error: "Document not found" })
-            return next()
-        }
-
-        const document = new Folder(records[0].toObject())
-
-        res.send(200, document)
-        return next()
     },
     
     get: async (req: any, res: any, next: Function) => {

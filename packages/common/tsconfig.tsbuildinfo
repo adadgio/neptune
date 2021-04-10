@@ -22,8 +22,8 @@
         "affectsGlobalScope": false
       },
       "./src/models/user.ts": {
-        "version": "eebf60ac5dbd7843bd484d70cf60f6c01939df0499c6d5579191507349cb3c63",
-        "signature": "5ea27a5ba54add3c76658dfb9ba0b6cc9175ac8f24d024b5745e58903fb6672d",
+        "version": "abe08848f07dc6e42233bfecc27da7d8ee0da4cf073628d5ae369e7256fd4ed3",
+        "signature": "5220bb0ccf0dcbcbae969844f8812f93dbc738c9de27f68ae76ceb486dcecf20",
         "affectsGlobalScope": false
       },
       "./src/models/folder.ts": {
@@ -37,7 +37,7 @@
         "affectsGlobalScope": false
       },
       "./src/utils/has.ts": {
-        "version": "6f5f1a57370edd7a860d740d4413887698e24fe5ecb649138eabb22a5e5dfca4",
+        "version": "ba9cef2fc8c797fb4c18504070367937bbef90d3d8e4fc07428b0759160dc2c2",
         "signature": "18470cb871dc940154da5dd7d48f765ffa37a6cd9dbb8dea7a91c0716d46721d",
         "affectsGlobalScope": false
       },
@@ -46,9 +46,14 @@
         "signature": "2be3fb6276c8b2137421fe235649f2fc260e8cb9424268f1d0f1934ed768461b",
         "affectsGlobalScope": false
       },
+      "./src/utils/strtolabel.ts": {
+        "version": "ee15a44d150ac28d26c88a045a254fbb6e0f25811c340ef868cb37e540455548",
+        "signature": "3f488c3b62a952f4b9b4ce055b760a729ecb21ff9e2d52d12f107ec5ea67b9a1",
+        "affectsGlobalScope": false
+      },
       "./src/index.ts": {
-        "version": "24e511378c75c53e36509c67299944be7acce3d3d7f6a4301eeac7bfa9fb8ef6",
-        "signature": "08d32a38cf8fd5b93fff850a1d3f31525171f9c82f81239203fd02fa236f60cd",
+        "version": "ab9f78a10a334ade01ab188a797d2bd88af87db0e09f5c0c82f10a5f5debbac9",
+        "signature": "73fd19e7eb87b69bb6a22624a3a95b98b8af6c7d60babc1cf1a3992241af5ad5",
         "affectsGlobalScope": false
       }
     },
@@ -80,7 +85,8 @@
         "./src/models/folder.ts",
         "./src/models/user.ts",
         "./src/utils/has.ts",
-        "./src/utils/option.ts"
+        "./src/utils/option.ts",
+        "./src/utils/strtolabel.ts"
       ]
     },
     "exportedModulesMap": {
@@ -90,7 +96,8 @@
         "./src/models/folder.ts",
         "./src/models/user.ts",
         "./src/utils/has.ts",
-        "./src/utils/option.ts"
+        "./src/utils/option.ts",
+        "./src/utils/strtolabel.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -103,7 +110,8 @@
       "./src/models/folder.ts",
       "./src/models/user.ts",
       "./src/utils/has.ts",
-      "./src/utils/option.ts"
+      "./src/utils/option.ts",
+      "./src/utils/strtolabel.ts"
     ]
   },
   "version": "4.2.4"
