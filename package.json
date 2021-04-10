@@ -1,0 +1,15 @@
+{
+    "name": "sync",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "start": "yarn build && lerna run watch --stream --parallel",
+        "build": "lerna run build --stream"
+    },
+    "devDependencies": {
+        "lerna": "^4.0.0",
+        "typescript": "^4.2.4"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "name": "@sync/ui",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        
+    },
+    "dependencies": {
+        "@sync/common": "^1.0.0"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "lib": [
+            "es5",
+            "es2015.promise",
+            "dom"
+        ],
+        "module": "commonjs",
+        "baseUrl": "src",
+        "rootDir": "src",
+        "outDir": "dist",
+        "sourceMap": false,
+        "target": "es6",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+    },
+    "include": [
+        "./**/*.ts"
+    ],
+    "exclude": [
+        "./dist",
+        "./test",
+        "./node_modules"
+    ],
+    "paths": {
+        "~/*": [
+            "/*"
+        ],
+    },
+    "references": [
+        {
+            "path": "../common"
+        }
+    ]
+}

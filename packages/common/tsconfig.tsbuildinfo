@@ -1,0 +1,110 @@
+{
+  "program": {
+    "fileInfos": {
+      "../../node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "b3584bc5798ed422ce2516df360ffa9cf2d80b5eae852867db9ba3743145f895",
+        "signature": "b3584bc5798ed422ce2516df360ffa9cf2d80b5eae852867db9ba3743145f895",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "feeeb1dd8a80fb76be42b0426e8f3ffa9bdef3c2f3c12c147e7660b1c5ba8b3b",
+        "signature": "feeeb1dd8a80fb76be42b0426e8f3ffa9bdef3c2f3c12c147e7660b1c5ba8b3b",
+        "affectsGlobalScope": true
+      },
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "2bb4b3927299434052b37851a47bf5c39764f2ba88a888a107b32262e9292b7c",
+        "signature": "2bb4b3927299434052b37851a47bf5c39764f2ba88a888a107b32262e9292b7c",
+        "affectsGlobalScope": true
+      },
+      "./src/apierror.ts": {
+        "version": "870436dc93754038736bb678b097328bb0793f0e382b652ff441120ff047638b",
+        "signature": "b07de09cb9e3c1224db1146376f9d1fd50d12814549a39c1ef7e1dde8ae7d162",
+        "affectsGlobalScope": false
+      },
+      "./src/models/user.ts": {
+        "version": "eebf60ac5dbd7843bd484d70cf60f6c01939df0499c6d5579191507349cb3c63",
+        "signature": "5ea27a5ba54add3c76658dfb9ba0b6cc9175ac8f24d024b5745e58903fb6672d",
+        "affectsGlobalScope": false
+      },
+      "./src/models/folder.ts": {
+        "version": "7f5cc9eaaf6a7df1a26862f59ae42a5ec21b3b1e35de666539c2e26fae1d1cbb",
+        "signature": "ce2512f92bdcf5052daaccc37b4343bb6e533f0f7d37b74ddf7229ba00372d39",
+        "affectsGlobalScope": false
+      },
+      "./src/models/document.ts": {
+        "version": "c18fe4814b69d29c024293bceded0869cbc85a9cb5daca4bd56b6f8d0f3dde9a",
+        "signature": "4841517952f94d2c09d43b0ed03ab04c9986ff35c5db562aff4ca07ceb8454e8",
+        "affectsGlobalScope": false
+      },
+      "./src/utils/has.ts": {
+        "version": "6f5f1a57370edd7a860d740d4413887698e24fe5ecb649138eabb22a5e5dfca4",
+        "signature": "18470cb871dc940154da5dd7d48f765ffa37a6cd9dbb8dea7a91c0716d46721d",
+        "affectsGlobalScope": false
+      },
+      "./src/utils/option.ts": {
+        "version": "35729721f27f4fde35e7b9b8aa5fc27a4e821ec6ba9393776de96d7bd9ce2dc5",
+        "signature": "2be3fb6276c8b2137421fe235649f2fc260e8cb9424268f1d0f1934ed768461b",
+        "affectsGlobalScope": false
+      },
+      "./src/index.ts": {
+        "version": "24e511378c75c53e36509c67299944be7acce3d3d7f6a4301eeac7bfa9fb8ef6",
+        "signature": "08d32a38cf8fd5b93fff850a1d3f31525171f9c82f81239203fd02fa236f60cd",
+        "affectsGlobalScope": false
+      }
+    },
+    "options": {
+      "allowJs": false,
+      "composite": true,
+      "lib": [
+        "lib.es5.d.ts",
+        "lib.es2015.promise.d.ts",
+        "lib.dom.d.ts"
+      ],
+      "module": 1,
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "sourceMap": false,
+      "target": 2,
+      "moduleResolution": 2,
+      "noImplicitAny": false,
+      "strictNullChecks": false,
+      "typeRoots": [
+        "./node_modules/@types"
+      ],
+      "configFilePath": "./tsconfig.json"
+    },
+    "referencedMap": {
+      "./src/index.ts": [
+        "./src/apierror.ts",
+        "./src/models/document.ts",
+        "./src/models/folder.ts",
+        "./src/models/user.ts",
+        "./src/utils/has.ts",
+        "./src/utils/option.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "./src/index.ts": [
+        "./src/apierror.ts",
+        "./src/models/document.ts",
+        "./src/models/folder.ts",
+        "./src/models/user.ts",
+        "./src/utils/has.ts",
+        "./src/utils/option.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "../../node_modules/typescript/lib/lib.dom.d.ts",
+      "../../node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../node_modules/typescript/lib/lib.es5.d.ts",
+      "./src/apierror.ts",
+      "./src/index.ts",
+      "./src/models/document.ts",
+      "./src/models/folder.ts",
+      "./src/models/user.ts",
+      "./src/utils/has.ts",
+      "./src/utils/option.ts"
+    ]
+  },
+  "version": "4.2.4"
+}
